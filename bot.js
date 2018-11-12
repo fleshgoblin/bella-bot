@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
   client.user.setStatus('Online')
-  client.user.setActivity("sleeping (since 8:58pm)",{type: "PLAYING"});
+  client.user.setActivity("napping (since 11:49am)",{type: "PLAYING"});
 });
 
 client.on('message', msg => {
