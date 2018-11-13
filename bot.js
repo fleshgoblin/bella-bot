@@ -3,6 +3,9 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  setTimeout(() => {
+  client.setPresence(status)
+},60000 - Date.now() % 84000)
 });
 
 client.on('message', msg => {
